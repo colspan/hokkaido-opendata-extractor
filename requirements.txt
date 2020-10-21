@@ -1,2 +1,4 @@
 luigi
+requests
+xlrd
 xlsx2csv

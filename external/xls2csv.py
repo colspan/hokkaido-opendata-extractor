@@ -7,24 +7,26 @@ import csv
 import xlrd
 from optparse import OptionParser
 
-def xls2csv(infilepath, outfile, sheetid=1, delimiter=",", sheetdelimiter="--------", encoding="cp1251"):
+def xls2csv(infilepath, outfile, sheetid=None, sheetname=None, delimiter=",", sheetdelimiter="--------", encoding="cp1251"):
     writer = csv.writer(outfile, dialect='excel', quoting=csv.QUOTE_ALL, delimiter=delimiter)
 
-    book = xlrd.open_workbook(infilepath, encoding_override=encoding, formatting_info=True)
+    book = xlrd.open_workbook(infilepath, encoding_override=encoding)#, formatting_info=True)
 
     formats = {}
-    for i, f in book.format_map.iteritems():
+    for i, f in book.format_map.items():
         if f.format_str != None:
             formats[i] = extract_number_format(f.format_str)
-
+    if sheetid is None and sheetname is not None:
+        sheet = book.sheet_by_name(sheetname)
+        sheetid = sheet.number + 1
     if sheetid > 0:
         # xlrd has zero-based sheet enumeration, but 0 means "convert all"
         sheet_to_csv(book, sheetid - 1, writer, formats)
     else:
-        for sheetid in xrange(book.nsheets):
+        for sheetid in range(book.nsheets):
             sheet_to_csv(book, sheetid, writer, formats)
             if sheetdelimiter and sheetid < book.nsheets - 1:
-                outfile.write(sheetdelimiter + "\r\n")
+                outfile.write(sheetdelimiter + "\n")
 
 
 def sheet_to_csv(book, sheetid, writer, formats):
@@ -34,27 +36,27 @@ def sheet_to_csv(book, sheetid, writer, formats):
     if not sheet:
         raise Exception("Sheet %i Not Found" % sheetid)
 
-    for i in xrange(sheet.nrows):
+    for i in range(sheet.nrows):
         row = [""] * sheet.ncols
         cells = sheet.row(i)
-        for j in xrange(sheet.ncols):
+        for j in range(sheet.ncols):
 
             cell = cells[j]
 
             if cell.ctype == xlrd.XL_CELL_TEXT:
-                cval = cell.value.encode('utf-8')
+                cval = cell.value
 
             elif cell.ctype == xlrd.XL_CELL_NUMBER:
+                cval = cell.value
+                # if cell.xf_index != None:
 
-                if cell.xf_index != None:
-
-                    a_fmt = formats[book.xf_list[cell.xf_index].format_key]
-                    if a_fmt:
-                        cval = format_number(cell.value, a_fmt, "", ".")
-                    elif cell.value == int(cell.value):
-                        cval = int(cell.value)
-                    else:
-                        cval = "%s" % cell.value
+                #     a_fmt = formats[book.xf_list[cell.xf_index].format_key]
+                #     if a_fmt:
+                #         cval = format_number(cell.value, a_fmt, "", ".")
+                #     elif cell.value == int(cell.value):
+                #         cval = int(cell.value)
+                #     else:
+                #         cval = "%s" % cell.value
 
             elif cell.ctype == xlrd.XL_CELL_DATE:
                 try:
