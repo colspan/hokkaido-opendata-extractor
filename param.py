@@ -2,16 +2,16 @@
 # -*- coding: utf-8 -*-
 
 population_targets = {
-    "2015":"http://www.pref.hokkaido.lg.jp/file.jsp?id=825833"
+    "2015": "http://www.pref.hokkaido.lg.jp/file.jsp?id=825833"
 }
 
 health_stat_report_targets = [
     {
-        "name":"health_stat_report",
-        "subname":"01-10",
-        "type":"xlsx",
-        "description":"北海道保健統計年報",
-        "sheets":[
+        "name": "health_stat_report",
+        "subname": "01-10",
+        "type": "xlsx",
+        "description": "北海道保健統計年報",
+        "sheets": [
             "第1表 人口動態総覧，年次別",
             "第2表 人口動態総覧，都道府県別 ",
             "第3表 人口動態総覧（率），都道府県別",
@@ -25,51 +25,51 @@ health_stat_report_targets = [
         ],
         "urls":[
             {
-                "year":"2008",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=70596",
-                "url_redirected":"http://www.pref.hokkaido.lg.jp/hf/sum/grp/03/t001010-2.xls",
-                "type":"xls"
+                "year": "2008",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=70596",
+                "url_redirected": "http://www.pref.hokkaido.lg.jp/hf/sum/grp/03/t001010-2.xls",
+                "type": "xls"
             },
             {
-                "year":"2009",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=435006",
-                "url_redirected":"http://www.pref.hokkaido.lg.jp/hf/sum/t001010.xls",
-                "type":"xls"
+                "year": "2009",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=435006",
+                "url_redirected": "http://www.pref.hokkaido.lg.jp/hf/sum/t001010.xls",
+                "type": "xls"
             },
             {
-                "year":"2010",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=494361",
-                "url_redirected":"http://www.pref.hokkaido.lg.jp/hf/sum/t001010-1.xls",
-                "type":"xls"
+                "year": "2010",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=494361",
+                "url_redirected": "http://www.pref.hokkaido.lg.jp/hf/sum/t001010-1.xls",
+                "type": "xls"
             },
             {
-                "year":"2011",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=620712",
-                "type":"xlsx"
+                "year": "2011",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=620712",
+                "type": "xlsx"
             },
             {
-                "year":"2012",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=725951",
-                "type":"xlsx"
+                "year": "2012",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=725951",
+                "type": "xlsx"
             },
             {
-                "year":"2013",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=880680",
-                "type":"xlsx"
+                "year": "2013",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=880680",
+                "type": "xlsx"
             },
             {
-                "year":"2014",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=920632",
-                "type":"xlsx"
+                "year": "2014",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=920632",
+                "type": "xlsx"
             }
         ]
     },
     {
-        "name":"health_stat_report",
-        "subname":"21-24",
-        "type":"xlsx",
-        "description":"北海道保健統計年報",
-        "sheets":[
+        "name": "health_stat_report",
+        "subname": "21-24",
+        "type": "xlsx",
+        "description": "北海道保健統計年報",
+        "sheets": [
             "第21表 死亡数，施設・市－郡部・年次別",
             "第22表 死亡数，月・年齢（5歳階級）別",
             "第23表 死亡割合（百分率），施設・市－郡部・年次別",
@@ -77,48 +77,48 @@ health_stat_report_targets = [
         ],
         "urls":[
             {
-                "year":"2008",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=70649",
-                "url_redirected":"http://www.pref.hokkaido.lg.jp/hf/sum/grp/03/t021024-2.xls",
-                "type":"xls"
+                "year": "2008",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=70649",
+                "url_redirected": "http://www.pref.hokkaido.lg.jp/hf/sum/grp/03/t021024-2.xls",
+                "type": "xls"
             },
             {
-                "year":"2009",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=494377", # このデータが欠損
-                "type":"xls"
+                "year": "2009",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=494377",  # このデータが欠損
+                "type": "xls"
             },
             {
-                "year":"2010",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=494377",
-                "url_redirected":"http://www.pref.hokkaido.lg.jp/hf/sum/t021024-1.xls",
-                "type":"xls"
+                "year": "2010",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=494377",
+                "url_redirected": "http://www.pref.hokkaido.lg.jp/hf/sum/t021024-1.xls",
+                "type": "xls"
             },
             {
-                "year":"2011",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=620725",
-                "url_redirected":"http://www.pref.hokkaido.lg.jp/hf/sum/T21-T24.xlsx",
-                "type":"xlsx"
+                "year": "2011",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=620725",
+                "url_redirected": "http://www.pref.hokkaido.lg.jp/hf/sum/T21-T24.xlsx",
+                "type": "xlsx"
             },
             {
-                "year":"2012",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=725999",
-                "url_redirected":"http://www.pref.hokkaido.lg.jp/hf/sum/grp/03/2014-21-24.xlsx",
-                "type":"xlsx"
+                "year": "2012",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=725999",
+                "url_redirected": "http://www.pref.hokkaido.lg.jp/hf/sum/grp/03/2014-21-24.xlsx",
+                "type": "xlsx"
             },
             {
-                "year":"2013",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=846617",
-                "url_redirected":"http://www.pref.hokkaido.lg.jp/hf/sum/25T21-24.xlsx",
-                "type":"xlsx"
+                "year": "2013",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=846617",
+                "url_redirected": "http://www.pref.hokkaido.lg.jp/hf/sum/25T21-24.xlsx",
+                "type": "xlsx"
             }
         ]
     },
     {
-        "name":"health_stat_report",
-        "subname":"37-44",
-        "type":"xlsx",
-        "description":"北海道保健統計年報",
-        "sheets":[
+        "name": "health_stat_report",
+        "subname": "37-44",
+        "type": "xlsx",
+        "description": "北海道保健統計年報",
+        "sheets": [
             "第37表 死亡数および死亡率（人口10万対），選択死因分類・保健所別",
             "第38表 死亡数および死亡率（人口10万対），選択死因分類・（総合）振興局－市",
             "第39表 死亡数，選択死因分類・保健所・市町村別",
@@ -130,45 +130,45 @@ health_stat_report_targets = [
         ],
         "urls":[
             {
-                "year":"2008",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=70624",
-                "type":"xls"
+                "year": "2008",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=70624",
+                "type": "xls"
             },
             {
-                "year":"2009",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=435027",
-                "url_redirected":"http://www.pref.hokkaido.lg.jp/hf/sum/t037044-1.xls",
-                "type":"xls"
+                "year": "2009",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=435027",
+                "url_redirected": "http://www.pref.hokkaido.lg.jp/hf/sum/t037044-1.xls",
+                "type": "xls"
             },
             {
-                "year":"2010",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=494387",
-                "url_redirected":"http://www.pref.hokkaido.lg.jp/hf/sum/t037044.xls",
-                "type":"xls"
+                "year": "2010",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=494387",
+                "url_redirected": "http://www.pref.hokkaido.lg.jp/hf/sum/t037044.xls",
+                "type": "xls"
             },
             {
-                "year":"2011",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=620734",
-                "type":"xlsx"
+                "year": "2011",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=620734",
+                "type": "xlsx"
             },
             {
-                "year":"2012",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=726005",
-                "type":"xlsx"
+                "year": "2012",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=726005",
+                "type": "xlsx"
             },
             {
-                "year":"2013",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=910379",
-                "type":"xlsx"
+                "year": "2013",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=910379",
+                "type": "xlsx"
             }
         ]
     },
     {
-        "name":"health_stat_report",
-        "subname":"59-64",
-        "type":"xlsx",
-        "description":"北海道保健統計年報",
-        "sheets":[
+        "name": "health_stat_report",
+        "subname": "59-64",
+        "type": "xlsx",
+        "description": "北海道保健統計年報",
+        "sheets": [
             "第59表 医師数，業務の種類（従業地による）・年次別",
             "第60表 歯科医師数，業務の種類（従業地による）・年次別",
             "第61表 薬剤師数，業務の種類（従業地による）・年次別",
@@ -178,48 +178,48 @@ health_stat_report_targets = [
         ],
         "urls":[
             {
-                "year":"2008",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=70653",
-                "type":"xls"
+                "year": "2008",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=70653",
+                "type": "xls"
             },
             {
-                "year":"2009",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=435034",
-                "type":"xls"
+                "year": "2009",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=435034",
+                "type": "xls"
             },
             {
-                "year":"2010",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=495832",
-                "type":"xls"
+                "year": "2010",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=495832",
+                "type": "xls"
             },
             {
-                "year":"2011",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=620762",
-                "type":"xls"
+                "year": "2011",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=620762",
+                "type": "xls"
             },
             {
-                "year":"2012",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=726023",
-                "type":"xls"
+                "year": "2012",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=726023",
+                "type": "xls"
             },
             {
-                "year":"2013",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=846599",
-                "type":"xls"
+                "year": "2013",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=846599",
+                "type": "xls"
             },
             {
-                "year":"2014",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=920653",
-                "type":"xls"
+                "year": "2014",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=920653",
+                "type": "xls"
             }
         ]
     },
     {
-        "name":"health_stat_report",
-        "subname":"80-85",
-        "type":"xlsx",
-        "description":"北海道保健統計年報",
-        "sheets":[
+        "name": "health_stat_report",
+        "subname": "80-85",
+        "type": "xlsx",
+        "description": "北海道保健統計年報",
+        "sheets": [
             "第80表 医療施設数および率（人口10万対），施設の種類・支庁－市別",
             "第81表 医療施設数および率（人口10万対），施設の種類・保健所・市町村別",
             "第82表 医療施設の病床数，施設の種類・支庁－市別",
@@ -229,42 +229,185 @@ health_stat_report_targets = [
         ],
         "urls":[
             {
-                "year":"2008",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=70643",
-                "type":"xls"
+                "year": "2008",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=70643",
+                "type": "xls"
             },
             {
-                "year":"2009",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=435047",
-                "type":"xls"
+                "year": "2009",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=435047",
+                "type": "xls"
             },
             {
-                "year":"2010",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=495840",
-                "type":"xls"
+                "year": "2010",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=495840",
+                "type": "xls"
             },
             {
-                "year":"2011",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=671823",
-                "type":"xls"
+                "year": "2011",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=671823",
+                "type": "xls"
             },
             {
-                "year":"2012",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=726506",
-                "type":"xls"
+                "year": "2012",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=726506",
+                "type": "xls"
             },
             {
-                "year":"2013",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=846602",
-                "type":"xls"
+                "year": "2013",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=846602",
+                "type": "xls"
             },
             {
-                "year":"2014",
-                "url":"http://www.pref.hokkaido.lg.jp/file.jsp?id=920642",
-                "type":"xls"
+                "year": "2014",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=920642",
+                "type": "xls"
             }
         ]
     },
+]
+
+tourism_stat_report_targets = [
+    {
+        "name": "tourism_stat_report",
+        "subname": "",
+        "type": "xlsx",
+        "description": "北海道観光入込客数調査報告書",
+        "targets": [
+            # TODO 2000-2003
+            {
+                "year": "2004",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=85182",
+                "type": "xls",
+                "sheets": {
+                    'monthly': '６'
+                },
+
+            },
+            {
+                "year": "2005",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=85130",
+                "type": "xls",
+                "sheets": {
+                    'monthly': 'Ｐ６～４０'
+                },
+
+            },
+            {
+                "year": "2006",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=85122",
+                "type": "xls",
+                "sheets": {
+                    'monthly': '6～31頁'
+                },
+
+            },
+            {
+                "year": "2007",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=85243",
+                "type": "xls",
+                "sheets": {
+                    'monthly': '6～25頁'
+                },
+            },
+            {
+                "year": "2008",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=85066",
+                "type": "xls",
+                "sheets": {
+                    'monthly': '6～25頁'
+                },
+            },
+            {
+                "year": "2009",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=85080",
+                "type": "xls",
+                "sheets": {
+                    'monthly': '6～25頁'
+                },
+            },
+            {
+                "year": "2010",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=85073",
+                "type": "xls",
+                "sheets": {
+                    'monthly': '6～28頁'
+                },
+            },
+            {
+                "year": "2011",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=539009",
+                "type": "xls",
+                "sheets": {
+                    'monthly': '6～28頁'
+                },
+            },
+            {
+                "year": "2012",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=651449",
+                "type": "xls",
+                "sheets": {
+                    'monthly': '6～28頁'
+                },
+            },
+            {
+                "year": "2013",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=747164",
+                "type": "xls",
+                "sheets": {
+                    'monthly': '6～28頁'
+                },
+            },
+            {
+                "year": "2014",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=843639",
+                "type": "xlsx",
+                "sheets": {
+                    'monthly': '6～28頁'
+                },
+            },
+            {
+                "year": "2015",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=943087",
+                "type": "xlsx",
+                "sheets": {
+                    'monthly': '6～28頁'
+                },
+            },
+            {
+                "year": "2016",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=1038171",
+                "type": "xlsx",
+                "sheets": {
+                    'monthly': '6～28頁'
+                },
+            },
+            {
+                "year": "2017",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=1137239",
+                "type": "xls",
+                "sheets": {
+                    'monthly': '6～28頁'
+                },
+            },
+            {
+                "year": "2018",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=1230093",
+                "type": "xlsx",
+                "sheets": {
+                    'monthly': '6～28頁'
+                },
+            },
+            {
+                "year": "2019",
+                "url": "http://www.pref.hokkaido.lg.jp/file.jsp?id=1326718",
+                "type": "xlsx",
+                "sheets": {
+                    'monthly': '6～28頁'
+                },
+            },
+        ],
+    }
 ]
 
 communes = [
