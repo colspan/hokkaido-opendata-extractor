@@ -33,21 +33,20 @@ def extract_tourism_stat(inputfilename, year):
         last_area = ""
         last_promotion_bureau = ""
         last_commune = ""
-        for line in f:
-            record = (
-                line.replace("中礼内", "中札内").replace("（定山渓を除く）", "").rstrip().split(",")
-            )
+        reader = csv.reader(f)
+        for row in reader:
             # 飛ばす条件
             if (
-                record[0] == "圏　域"
-                or record[0] == "　圏　域"
-                or len(record) == 1
-                or record[6] == ""
+                len(row) == 0
+                or row[0] == "圏　域"
+                or row[0] == "　圏　域"
+                or len(row) == 1
+                or row[6] == ""
             ):
                 continue
             # 補完代入
-            if record[0] != "":
-                area = record[0].replace("圏域", "").replace("計", "").replace("　", "")
+            if row[0] != "":
+                area = row[0].replace("圏域", "").replace("計", "").replace("　", "")
                 if area == "オホーツ":
                     area = "オホーツク"
                 if area == "釧路・根":
@@ -57,9 +56,9 @@ def extract_tourism_stat(inputfilename, year):
                     last_promotion_bureau = ""
                     last_commune = ""
                     continue
-            if record[1] != "":
+            if row[1] != "":
                 promotion_bureau = (
-                    record[1]
+                    row[1]
                     .replace("支庁計", "")
                     .replace("支庁", "")
                     .replace("総合振興局計", "")
@@ -70,18 +69,19 @@ def extract_tourism_stat(inputfilename, year):
                     last_promotion_bureau = promotion_bureau
                     last_commune = ""
                     continue
-            if record[2] != "":
-                last_commune = record[2]
+            if row[2] != "":
+                row[2] = row[2].replace("中礼内", "中札内").replace("（定山渓を除く）", "")
+                last_commune = row[2]
             # skip
             if last_commune == "" or last_commune == "":
                 continue
-            record[0] = last_area.replace("圏域計", "").replace("　", "")
-            record[1] = last_promotion_bureau.replace("計", "")
-            record[2] = last_commune
+            row[0] = last_area.replace("圏域計", "").replace("　", "")
+            row[1] = last_promotion_bureau.replace("計", "")
+            row[2] = last_commune
             if 2003 <= year <= 2009:  # and len(record)>=21):
-                del record[17:18]
-                del record[10:11]
-            records.append(record)
+                del row[17:18]
+                del row[10:11]
+            records.append(row)
     return csv_header, records
 
 
